@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { getGreeting } from './redux/greeting/greetingSlice';
 
 const Greeting = () => {
@@ -20,8 +20,11 @@ const Greeting = () => {
   }
 
   return (
-    <div className="greeting">Greeting: {greeting}</div>
-  )
-}
+    <div className="greeting">
+      Greeting:
+      {greeting}
+    </div>
+  );
+};
 
-export default Greeting
+export default Greeting;

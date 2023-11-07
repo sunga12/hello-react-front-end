@@ -7,18 +7,17 @@ const initialState = {
   isLoading: false,
 };
 
-const API_URL = 'http://localhost:3001'
+const API_URL = 'http://localhost:3001';
 
 export const getGreeting = createAsyncThunk("greeting/getGreeting",
   async (_, thunkAPI) => {
     try {
       const response = await axios(`${API_URL}/api/v1/greetings/random_greetings`);
-      return response.data
-    } catch(error) {
+      return response.data;
+    } catch (error) {
       return thunkAPI.rejectWithValue("Error fetching greeting");
     }
-  },
-);
+  });
 
 const greetingSlice = createSlice({
   name: "greeting",
