@@ -7,7 +7,7 @@ const initialState = {
   isLoading: false,
 };
 
-const API_URL = 'http://localhost:3001';
+const API_URL = 'http://localhost:3000';
 
 export const getGreeting = createAsyncThunk("greeting/getGreeting",
   async (_, thunkAPI) => {
