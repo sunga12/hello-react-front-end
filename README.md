@@ -2,11 +2,6 @@
 
 <a name="readme-top"></a>
 
-<div align="center">
-<h2>ER Diagrma</h2>
-<img width="741" alt="Screenshot 2023-09-25 at 12 07 22" src="./ER Diagram Final capstone.PNG">
-
-</div>
 
 # 📗 Table of Contents
 
@@ -85,36 +80,11 @@ cd hello-react-front-end
 npm install
 ```
 
-### Run rails
-
-To configure the database connection in Rails, you need to update the database.yml file located in the config folder. Follow these steps: Locate the database.yml file in the config folder of your Rails application.
-
-1. Open the database.yml file using a text editor.
-
-2. Find the default: &default section in the file.
-
-3. Add the following lines under the default: &default section:
+### Usage 
 
 ```
-  host: localhost
-  username: your_username
-  password: your_password
-```
-
-4. Replace your_username with your actual database username and your_password with your actual database password.
-5. Save the changes to the database.yml file.
-6. Run
-
-```
-rails db:create
-```
-
-```
-rails db:migrate
-```
-
-```
-rails s
+npm run build
+npm start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
